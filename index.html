@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+</head>
+<body>
+    <h1>Welcome to the Memory Game!</h1>
+    <button id="startButton">Start Game</button>
+    <div id="gameArea"></div>
+    <script src="scripts/game.js"></script>
+</body>
+<footer>
+    <button id="restartButton">Start Over</button>
+    <script>
+        const restartButton = document.getElementById('restartButton');
+        restartButton.addEventListener('click', function() {
+            location.reload();
+        });
+    </script>
+    <p>&copy; 2025 Memory Game. All rights reserved.</p>
+</footer>
+</html>
